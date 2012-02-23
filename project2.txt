@@ -1,0 +1,43 @@
+voting system 
+        3 characters 
+
+page per candidate 
+        includes: 
+        image 
+        short summery (a sentence) 
+        button captioned with "vote for candidate_name" 
+
+voter must register to vote
+        registration info: 
+        voter ID number 
+	**use of a valid number between 1001 and 1049
+
+returning voters 
+        message: 
+        'already voted' message when trying to register 
+        view current voting totals 
+        ability to view candidate pages but without the vote button 
+        in place is a message "current votes: 3" or the number of actual 
+
+votes 
+make use of the POST method 
+check if (when) user voted 
+get the voter ID 
+if signed in and not voted then show vote now screen 
+if signed in and voted then show vote now screen 
+
+if a 'vote' is sent, then increment related field 
+
+
+
+
+Extras for the A
+	create a public page displaying vote totals
+
+	create a manager page that displays voter IDs and a checkbox
+		(checkbox is checked if already voted. manager can uncheck so voter can vote again. screen also has a 'clear all' button)
+
+	other extras like Ajax or a chart showing totals
+
+
+database 
