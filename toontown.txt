@@ -5,3 +5,5 @@ Jeromey
 database
 PHP functionality
 design & CSS
+
+get the taglines in there
