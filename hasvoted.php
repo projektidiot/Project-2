@@ -1,0 +1,3 @@
+<?
+print "thanks for voting!";
+?>

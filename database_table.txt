@@ -1,0 +1,113 @@
+-- phpMyAdmin SQL Dump
+-- version 3.2.1
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Feb 29, 2012 at 05:28 PM
+-- Server version: 5.1.41
+-- PHP Version: 5.3.2-1ubuntu4.13
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Database: `am315171`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `username` varchar(30) NOT NULL,
+  `password` varchar(32) DEFAULT NULL,
+  `userid` varchar(32) DEFAULT NULL,
+  `userlevel` tinyint(1) unsigned NOT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `timestamp` int(11) unsigned NOT NULL,
+  PRIMARY KEY (`username`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`username`, `password`, `userid`, `userlevel`, `email`, `timestamp`) VALUES
+('user1', 'password01', '0', 1, 'emailtest@gmail.com', 1320716244),
+('Super', 'de01de8b5f40c45a497e173775f780a9', '2a0e43332b1278486709cfa685a7e1d5', 3, 'privelegedemailfake@gmail.com', 1320777175),
+('TestingUser', 'af88a0ae641589b908fa8b31f0fcf6e1', '4af2e06600a1b4e3f55019b9290bce94', 1, 'fakeemail@hotmail.com', 1320722690),
+('Admin', '34b11c30f4ccfff13c30534a6b0661a5', '74fcba1de2ddc4384e749110bfa1da7d', 9, 'fakeadminemail@gmail.com', 1320857529),
+('Tests', '098f6bcd4621d373cade4e832627b4f6', '08fccb91cc092c600708da493b643e99', 1, 'marks@mars.com', 1320776949);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `voters`
+--
+
+CREATE TABLE IF NOT EXISTS `voters` (
+  `voter_id` int(50) NOT NULL,
+  `voter_yn` int(2) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `voters`
+--
+
+INSERT INTO `voters` (`voter_id`, `voter_yn`) VALUES
+(1001, 0),
+(1002, 0),
+(1003, 0),
+(1004, 0),
+(1005, 0),
+(1006, 0),
+(1007, 0),
+(1008, 0),
+(1009, 0),
+(1010, 0),
+(1011, 0),
+(1012, 0),
+(1013, 0),
+(1014, 0),
+(1015, 0),
+(1016, 0),
+(1017, 0),
+(1018, 0),
+(1019, 0),
+(1020, 0),
+(1021, 0),
+(1022, 0),
+(1023, 0),
+(1024, 0),
+(1025, 0),
+(1026, 0),
+(1027, 0),
+(1028, 0),
+(1029, 0),
+(1030, 0),
+(1031, 0),
+(1032, 0),
+(1033, 0),
+(1034, 0),
+(1035, 0),
+(1036, 0),
+(1037, 0),
+(1038, 0),
+(1039, 0),
+(1040, 0),
+(1041, 0),
+(1042, 0),
+(1043, 0),
+(1044, 0),
+(1045, 0),
+(1046, 0),
+(1047, 0),
+(1048, 0),
+(1049, 0);
