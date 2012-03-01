@@ -1,6 +1,15 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* -------- jQuery: http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css --------*/
+.slide.out{-webkit-transform:translateX(-100%);-webkit-animation-name:slideouttoleft}.slide.in{-webkit-transform:translateX(0);-webkit-animation-name:slideinfromright}.slide.out.reverse{-webkit-transform:translateX(100%);-webkit-animation-name:slideouttoright}.slide.in.reverse{-webkit-transform:translateX(0);-webkit-animation-name:slideinfromleft}.slideup.out{-webkit-animation-name:dontmove;z-index:0}.slideup.in{-webkit-transform:translateY(0);-webkit-animation-name:slideinfrombottom;z-index:10}.slideup.in.reverse{z-index:0;-webkit-animation-name:dontmove}.slideup.out.reverse{-webkit-transform:translateY(100%);z-index:10;-webkit-animation-name:slideouttobottom}.slidedown.out{-webkit-animation-name:dontmove;z-index:0}.slidedown.in{-webkit-transform:translateY(0);-webkit-animation-name:slideinfromtop;z-index:10}.slidedown.in.reverse{z-index:0;-webkit-animation-name:dontmove}.slidedown.out.reverse{-webkit-transform:translateY(-100%);z-index:10;-webkit-animation-name:slideouttotop}@-webkit-keyframes slideinfromright{from{-webkit-transform:translateX(100%)}to{-webkit-transform:translateX(0)}}@-webkit-keyframes slideinfromleft{from{-webkit-transform:translateX(-100%)}to{-webkit-transform:translateX(0)}}@-webkit-keyframes slideouttoleft{from{-webkit-transform:translateX(0)}to{-webkit-transform:translateX(-100%)}}@-webkit-keyframes slideouttoright{from{-webkit-transform:translateX(0)}to{-webkit-transform:translateX(100%)}}@-webkit-keyframes slideinfromtop{from{-webkit-transform:translateY(-100%)}to{-webkit-transform:translateY(0)}}@-webkit-keyframes slideinfrombottom{from{-webkit-transform:translateY(100%)}to{-webkit-transform:translateY(0)}}@-webkit-keyframes slideouttobottom{from{-webkit-transform:translateY(0)}to{-webkit-transform:translateY(100%)}}@-webkit-keyframes slideouttotop{from{-webkit-transform:translateY(0)}to{-webkit-transform:translateY(-100%)}}@-webkit-keyframes fadein{from{opacity:0}to{opacity:1}}@-webkit-keyframes fadeout{from{opacity:1}to{opacity:0}}.fade.out{z-index:0;-webkit-animation-name:fadeout}.fade.in{opacity:1;z-index:10;-webkit-animation-name:fadein}.viewport-flip{-webkit-perspective:1000;position:absolute}
+.ui-mobile-viewport-transitioning,.ui-mobile-viewport-transitioning .ui-page{width:100%;height:100%;overflow:hidden}.flip{-webkit-animation-duration:.65s;-webkit-backface-visibility:hidden;-webkit-transform:translateX(0)}.flip.out{-webkit-transform:rotateY(-180deg) scale(.8);-webkit-animation-name:flipouttoleft}.flip.in{-webkit-transform:rotateY(0) scale(1);-webkit-animation-name:flipinfromleft}.flip.out.reverse{-webkit-transform:rotateY(180deg) scale(.8);-webkit-animation-name:flipouttoright}
+.ui-mobile-nosupport-boxshadow .ui-focus{outline-width:2px}.ui-mobile,.ui-mobile body{height:100%}.ui-mobile fieldset,.ui-page{padding:0;margin:0}.ui-mobile a img,.ui-mobile fieldset{border:0}.ui-mobile-viewport{margin:0;overflow-x:visible;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}body.ui-mobile-viewport,div.ui-mobile-viewport{overflow-x:hidden}.ui-mobile [data-role=page],.ui-mobile [data-role=dialog],.ui-page{top:0;left:0;width:100%;min-height:100%;position:absolute;display:none;border:0}.ui-mobile .ui-page-active{display:block;overflow:visible}.ui-page{outline:0}@media screen and (orientation:portrait){.ui-mobile,.ui-mobile .ui-page{min-height:420px}}@media screen and (orientation:landscape){.ui-mobile,.ui-mobile .ui-page{min-height:300px}}.ui-page.ui-mobile-touch-overflow,.ui-mobile-touch-overflow.ui-native-fixed .ui-content{overflow:auto;height:100%;-webkit-overflow-scrolling:touch;-moz-overflow-scrolling:touch;-o-overflow-scrolling:touch;-ms-overflow-scrolling:touch;overflow-scrolling:touch}.ui-page.ui-mobile-touch-overflow,.ui-page.ui-mobile-touch-overflow *{-webkit-transform:rotateY(0)}.ui-page.ui-mobile-pre-transition{display:block}.ui-loading .ui-mobile-viewport{overflow:hidden!important}.ui-loading .ui-loader{display:block}.ui-loading .ui-page{overflow:hidden}.ui-loader{display:none;position:absolute;opacity:.85;z-index:100;left:50%;width:200px;margin-left:-130px;margin-top:-35px;padding:10px 30px}.ui-loader h1{font-size:15px;text-align:center}.ui-loader .ui-icon{position:static;display:block;opacity:.9;margin:0 auto;width:35px;height:35px;background-color:transparent}
+.ui-mobile-rendering>*{visibility:hidden}.ui-bar,.ui-body{position:relative;padding:.4em 15px;overflow:hidden;display:block;clear:both}.ui-bar{font-size:16px;margin:0}.ui-bar h1,.ui-bar h2,.ui-bar h3,.ui-bar h4,.ui-bar h5,.ui-bar h6{margin:0;padding:0;font-size:16px;display:inline-block}.ui-header,.ui-footer{display:block}.ui-page .ui-header,.ui-page .ui-footer{position:relative}.ui-header .ui-btn-left{position:absolute;left:10px;top:.4em}.ui-header .ui-btn-right{position:absolute;right:10px;top:.4em}.ui-header .ui-title,.ui-footer .ui-title{min-height:1.1em;text-align:center;font-size:16px;display:block;margin:.6em 90px .8em;padding:0;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;outline:0!important}.ui-footer .ui-title{margin:.6em 15px .8em}.ui-content{border-width:0;overflow:visible;overflow-x:hidden;padding:15px}.ui-page-fullscreen .ui-content{padding:0}.ui-mobile-touch-overflow.ui-page.ui-native-fixed,.ui-mobile-touch-overflow.ui-page.ui-native-fullscreen{overflow:visible}.ui-mobile-touch-overflow.ui-native-fixed .ui-header,.ui-mobile-touch-overflow.ui-native-fixed .ui-footer{position:fixed;left:0;right:0;top:0;z-index:200}.ui-mobile-touch-overflow.ui-page.ui-native-fixed .ui-footer{top:auto;bottom:0}.ui-mobile-touch-overflow.ui-native-fixed .ui-content{padding-top:2.5em;padding-bottom:3em;top:0;bottom:0;height:auto;position:absolute}.ui-mobile-touch-overflow.ui-native-fullscreen .ui-content{padding-top:0;padding-bottom:0}.ui-mobile-touch-overflow.ui-native-fullscreen .ui-header,.ui-mobile-touch-overflow.ui-native-fullscreen .ui-footer{opacity:.9}.ui-native-bars-hidden{display:none}.ui-icon{width:18px;height:18px}.ui-fullscreen img{max-width:100%}.ui-nojs{position:absolute;left:-9999px}.ui-hide-label label,.ui-hidden-accessible{position:absolute!important;left:-9999px;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px)}.spin{-webkit-transform:rotate(360deg);-webkit-animation-name:spin;-webkit-animation-duration:1s;-webkit-animation-iteration-count:infinite;-webkit-animation-timing-function:linear}@-webkit-keyframes spin{from{-webkit-transform:rotate(0deg)}to{-webkit-transform:rotate(360deg)}}.in,.out{-webkit-animation-timing-function:ease-in-out;-webkit-animation-duration:350ms}
+/* -------- End jQuery ----------- */
+
+
+
 /* CSS @font-face code from: http://nicewebtype.com/notes/2009/10/30/how-to-use-css-font-face/ */
 
 @font-face {
@@ -15,15 +24,16 @@
 }
 
 body {
-	text-align: center;
-	background: #e6f7b4 url(../img/bg.jpg) repeat-x;
+	background: url("img/yellow.jpg");
 }
 
 div.container {
+	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	width: 960px;
 	margin-top: 120px;
+	background-color: rgb(246,247,172);
 }
 
 div.transbox {
@@ -62,6 +72,10 @@ h3 {
 	color: #00A388;
 }
 
+h4 {
+	color: #FF6138;
+}
+
 h3::selection {
 	background: #FF6138;
 }
@@ -85,6 +99,16 @@ h3::-moz-selection {
 	color: #FF6138;
 	text-decoration: none;
 }
+
+a {
+	clear: both;
+	width: 30%;
+	max-width: 250px ;
+	height: 50px;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
 
 #submit {
 	margin-top: 3px;
